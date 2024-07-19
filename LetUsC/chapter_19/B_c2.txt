@@ -1,0 +1,5 @@
+Beyond the built-in features, the Java codebase of Burp Suite.
+facilitates the development of extensions to enhance the framework's functionality. 
+These extensions can be written in Java, Python (using the Java Jython interpreter), or Ruby (using the Java JRuby interpreter).
+The Burp Suite Extender module allows for quick and easy loading of extensions into the framework, while the marketplace, known as the BApp Store, 
+enables downloading of third-party modules. While certain extensions may require a professional license for integration.

@@ -1,0 +1,4 @@
+StarWind V2V Converter / P2V Migrator alleviates the risk of data 
+corruption during conversion by working with a copy of the target VM, keeping the original file intact. The utility uses VSS snapshots while carrying out P2V migration. In this way, the machine state is consistent, and any cha
+nce of data corruption or loss is avoided. StarWind can also replicate the virtual drives across multiple nodes in the cluster to ensure constant uptime of your data u
+sing StarWind VSAN.

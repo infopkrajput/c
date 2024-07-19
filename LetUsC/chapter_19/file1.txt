@@ -1,0 +1,4 @@
+Introduction
+Role-Based Access Control (RBAC) is a basic mechanism in authorization, used to help us define how resources are accessed within an application. While it appears simple, getting its architecture and implementation just right is a complex process requiring meticulous planning and execution. This article will delve into the nuances of RBAC, guiding you through the intricacies of implementing a strong and scalable RBAC authorization in your application.
+What is RBAC?
+RBAC is an authorization model used to determine access control based on predefined roles. Permissions are assigned to roles (Like "Admin or "User"), and roles are assigned to users by the administrator. This structure allows you to understand who has access to what easily.

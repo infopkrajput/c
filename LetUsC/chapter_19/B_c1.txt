@@ -1,0 +1,6 @@
+Proxy: The Burp Proxy is the most renowned aspect of Burp Suite.
+Repeater: Another well-known feature. Repeater allows for capturing, modifying.
+Intruder: Despite rate limitations in Burp Suite Community.
+Decoder: Decoder offers a valuable service for data transformation.
+Comparer: As the name suggests, Comparer enables the comparison of two pieces of data at either the word or byte level.
+Sequencer: Sequencer is typically employed when assessing the randomness of tokens, such as session cookie values or other supposedly randomly generated data.
