@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/PC/OneDrive/PK/Study/c/LetUsC/research",
-      "program": "c:/Users/PC/OneDrive/PK/Study/c/LetUsC/research/build/Debug/outDebug",
+      "cwd": "c:/Users/pknatic/OneDrive/PK/Study/c/LetUsC/research",
+      "program": "c:/Users/pknatic/OneDrive/PK/Study/c/LetUsC/research/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
