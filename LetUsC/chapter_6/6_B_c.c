@@ -20,7 +20,8 @@ int main() {
         scanf("%lf", &n);
         printf("Enter compounding frequency : ");
         scanf("%lf", &q);
-        a = p * pow(1 + r / q, n * q);
+        r = r / 100;
+        a = p * pow((1 + r/n),n*q);     
         printf("Amount for set %d: %.2lf\n", i + 1, a);
     }
     return 0;
