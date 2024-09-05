@@ -1,22 +1,39 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int i;
-    int p,n;
-    float a,r,q;
-    for(i = 1 ; i<=10;i++)
+    int a ,b ,c;
+    char ch='y', condition;
+    while(ch == 'y')
     {
-        printf("Enter the principle of amount : ");
-        scanf("%d",&p);
-        printf("Enter the number of years : ");
-        scanf("%d",&n);
-        printf("Enter the rate of interest : ");
-        scanf("%f",&r);
-        printf("Enter the compounding per year : ");
-        scanf("%f",&q);
-        a = p * pow((1 + r/q),n);
-        printf("The amount after %d years at %.2f%% interest with %f compounding per year is : %.2f\n",n,r,q,a);
+        printf("Enter the value of a : ");
+        scanf("%d",&a);
+        printf("Enter the value of b : ");
+        scanf("%d",&b);
+        printf("What to you want to do : ");
+        scanf(" %c",&condition);
+        if(condition == '+')
+        {
+            c = a + b;
+            printf("Addition of %d and %d is : %d\n",a,b,c);
+        }
+        if(condition == '-')
+        {
+            c = a - b;
+            printf("Subtraction of %d and %d is : %d\n",a,b,c);
+        }
+        if(condition == '*')
+        {
+            c = a * b;
+            printf("Multiplication of %d and %d is : %d\n",a,b,c);
+        }
+        if(condition == '/')
+        {
+            c = a / b;
+            printf("Division of %d and %d is : %d",a,b,c);
+        }
+        printf("Do you want to check more : ");
+        scanf(" %c",&ch);
+        
     }
     return 0;
 }

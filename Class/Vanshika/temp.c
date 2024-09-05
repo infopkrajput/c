@@ -1,18 +1,32 @@
-// What is the output of following code snippet?
+// Consider the c program shown below
 #include <stdio.h>
-int main()
+#define print(x) printf("%d ", x)
+
+int x;
+void Q(int z)
 {
-    char *ptr = "AppliedCourse";
-    printf("%c\n", *&*&*ptr);
+    z += x;
+    print(z);
+}
+
+void P(int *y)
+{
+    int x = *y + 2;
+    Q(x);
+    *y = x - 1;
+    print(x);
+}
+
+int main(void)
+{
+    x = 5;
+    P(&x);
+    print(x);
     return 0;
 }
 
-// It will print A
-// It will print AppliedCourse
-// Compile error
-// It will print some garbage Value 
 
-// Explanation
-/*
-The operator is used for dereferencing and the operator & is used to get the address. These operators cancel out effect of each other when used one after another. We can apply them alternatively any no. of times.  In the above code, ptr is a pointer to first character of string A. *ptr gives us A, &ptr gives address of A, *&*ptr again A, &&ptr address of A, and finally *&*&*ptr gives 'A
-*/
+// 12 7 6
+// 22 12 11 
+// 14 6 6
+// 7 6 6
