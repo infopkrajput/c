@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/PC/OneDrive/PK/Study/c/Class/Vanshika/chapter8",
-      "program": "c:/Users/PC/OneDrive/PK/Study/c/Class/Vanshika/chapter8/build/Debug/outDebug",
+      "cwd": "c:/Users/pkraj/OneDrive/PK/Study/c/Class/Vanshika/chapter9",
+      "program": "c:/Users/pkraj/OneDrive/PK/Study/c/Class/Vanshika/chapter9/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
