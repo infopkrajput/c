@@ -1,32 +1,86 @@
-// Consider the c program shown below
 #include <stdio.h>
-#define print(x) printf("%d ", x)
+// function declaration
+void pattern(int);
+void printno();
+void F();
+void C();
 
-int x;
-void Q(int z)
+int main()
 {
-    z += x;
-    print(z);
+    // int n = 4;
+    // pattern(n);
+    // printno();
+    F();
+    printf("\n");
+    C();
+}
+// function definition
+void pattern(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = n - 1; j >= i; j--)
+        {
+            printf(" ");
+        }
+        for (int k = 1; k <= i * 2 - 1; k++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    };
 }
 
-void P(int *y)
+void printno()
 {
-    int x = *y + 2;
-    Q(x);
-    *y = x - 1;
-    print(x);
+    long long int mno;
+    printf("\n Enter Mobile Number : ");
+    scanf("%lld", &mno);
+    printf("Your Mobile No is : %lld", mno);
 }
 
-int main(void)
+void F()
 {
-    x = 5;
-    P(&x);
-    print(x);
-    return 0;
+    int n = 7;
+    int j;
+    for (int i = 1; i <= n; i++)
+    {
+        if (i == 1)
+        {
+            for (j = 1; j <= 5; j++)
+            {
+                printf("#");
+            }
+        }
+        if (i == 4)
+        {
+            for (j = 1; j <= 4; j++)
+            {
+                printf("#");
+            }
+        }
+
+        printf("#");
+        printf("\n");
+    }
+    // printf("V");
 }
 
-
-// 12 7 6
-// 22 12 11 
-// 14 6 6
-// 7 6 6
+void C()
+{
+    int n = 9 ,j;
+    for(int i=1;i<=n;i++)
+    {
+        if(i==1||i==9 )
+        {
+            for(j=1;j<=6;j++)
+            {
+                if(j>0&&j<3)
+                printf(" ");
+                else
+                printf("#");
+            }
+        }
+        printf("\n");
+    }
+}
