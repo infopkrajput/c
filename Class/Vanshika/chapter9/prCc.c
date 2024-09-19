@@ -13,7 +13,7 @@ int main()
     printf("Enter the points of X3 and y3 : ");
     scanf("%lf%lf",&x3,&y3);
     a = Distance(x1,y1,x2,y2);
-    b = Distance(x2,y2,x3,y3);
+    b = Distance(x2,y2,x3,y3);       
     c = Distance(x3,y3,x1,y1);
     areaOfTriangle = Area(a,b,c);
     double s1,s2,s3,a1,a2,a3;
