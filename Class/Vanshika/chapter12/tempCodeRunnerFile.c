@@ -1,0 +1,1 @@
+#define YES 1
