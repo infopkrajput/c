@@ -22,7 +22,7 @@ int main()
         if (i % 2 == 0)
         {
             digit = str[i] - '0';
-            digit = digit * 2;      // digit*=2  
+            digit = digit * 2;     
             if (digit > 9)
             {
                 digit = digit - 9;
@@ -32,11 +32,11 @@ int main()
         else
         {
             digit = str[i] - 48;
-            sum2 = sum2 + digit; // 9 + 1 = 10 
+            sum2 = sum2 + digit; 
         }
     }
-    printf("Sum = %d",sum);
-    printf("Sum2 = %d",sum2);
+    // printf("Sum = %d",sum);
+    // printf("Sum2 = %d",sum2);
     if ((sum + sum2) % 10 == 0)
     {
         printf("Credit card no. is valid!");
