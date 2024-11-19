@@ -1,86 +1,28 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-struct employee
-{
-    char name[50];
-    int age;
-    float salary;
-};
-struct employee a;
-void printEmployee(struct employee e);
-void enterEmployee(struct employee *e);
-void deleteEmployee(struct employee *e,int *x);
+void convertDate(int *day, int *month, int *year, char *date);
+
 int main()
 {
-    struct employee e[50];
-    int n;
-    int x = 0;
-    while (1)
-    {
-        printf("1. Enter the employee details: \n");
-        printf("2. print the employee details: \n");
-        printf("3. Delete employee: \n");
-        printf("4. exit \n");
-        scanf("%d", &n);
-        switch (n)
-        {
-        case 1:
-            enterEmployee(&e[x]);
-            x++;
-            break;
-        case 2:
-            for (int i = 0; i < x; i++)
-            {
-                printEmployee(e[i]);
-            }
-            break;
-        case 3:
-            deleteEmployee(e,&x);
-            break;
-        case 4:
-            exit(1);
-            break;
-        default:
-            printf("Invalid choice\n");
-            break;
-        }
-    }
-
+    char date[13];
+    printf("Enter date in the format dd/mm/yyyy: ");
+    scanf("%s", date);
+    int day;
+    int month;
+    int year;
+    convertDate(&day, &month, &year, date);
+    printf("day = %d\n", day);
+    printf("month = %d\n", month);
+    printf("year = %d\n", year);
     return 0;
 }
-void printEmployee(struct employee e)
+void convertDate(int *day, int *month, int *year, char *date)
 {
-    printf("Name: %s\n", e.name);
-    printf("Age: %d\n", e.age);
-    printf("Salary: %.2f\n", e.salary);
-    printf("\n");
-}
-void enterEmployee(struct employee *e)
-{
-    printf("Enter name: ");
-    scanf("%s", e->name);
-    printf("Enter age: ");
-    scanf("%d", &e->age);
-    printf("Enter salary: ");
-    scanf("%f", &e->salary);
-}
-void deleteEmployee(struct employee *e,int *x)
-{
-    char name[20];
-    printf("Enter the name which you want to delete : ");
-    scanf("%s", name);
-    for (int i = 0; i < *x; i++)
-    {
-        if (strcmp(e[i].name, name) == 0)
-        {
-            int j;
-            for (j = i; j < *x - 1; j++)
-            {
-                e[j] = e[j + 1];
-            }
-            *x = *x - 1;
-        }
-    }
-    printf("Employee delete successfully!\n");
+    *day = (date[0] - 48) * 10;
+    *day = *day + (date[1] - 48);
+    *month = (date[3] - 48) * 10;
+    *month = *month + (date[4] - 48);
+    *year = (date[6] - 48) * 1000;
+    *year += (date[7] - 48) * 100;
+    *year += (date[8] - 48) * 10;
+    *year += (date[9] - 48);
 }
