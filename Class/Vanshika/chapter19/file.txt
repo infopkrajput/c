@@ -1,0 +1,4 @@
+Wikis are powered by wiki software,
+also known as wiki engines.
+Being a form of content management system,
+these differ from other web-based systems.
