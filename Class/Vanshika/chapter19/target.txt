@@ -1,0 +1,3 @@
+Rate = 40
+Total Quantity = 10000
+Total Sum = 400000
