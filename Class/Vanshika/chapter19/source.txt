@@ -1,7 +1,1 @@
-Be composable and generic, allowing users to write code that can be used with many different types of execution resources.
-Encapsulate common asynchronous patterns in customizable and reusable algorithms, so users don’t have to invent things themselves.
-Make it easy to be correct by construction.
-Support the diversity of execution resources and execution agents, because not all execution agents are created equal; some are less capable than others, but not less important.
-Allow everything to be customized by an execution resource, including transfer to other execution resources, but don’t require that execution resources customize everything.
-Care about all reasonable use cases, domains and platforms.
-Errors must be propagated, but error handling must not present a burden.
+Be composable and generic
