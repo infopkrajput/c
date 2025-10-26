@@ -1,8 +1,25 @@
-<h1 align="center">Hi 👋, I'm Pushpendra Kumar</h1>
-<p align="left"> <a href="https://twitter.com/pknatic" target="_blank"><img src="https://img.shields.io/twitter/follow/pknatic?logo=twitter&style=for-the-badge" alt="pknatic" /></a> </p>
+# Learning C from *Let Us C*
 
-- 🌱 I’m currently learning **C Language**
+## 📘 About This Repository
+This repository documents my journey of learning the C programming language entirely through self-study using the classic book **_Let Us C_** by **Yashavant Kanetkar**.
 
-- 👯 I’m looking to collaborate on **C Language Projects**
+I completed all the exercises and examples from this book, covering everything from basics to advanced topics like pointers and file handling.
+Each folder contains solutions organized by chapter.
+This journey strengthened my understanding of C language and built a solid foundation for learning other languages like C++, Python, and Java.
 
-- 📫 How to reach me **info.pkrajput@gmail.com**
+## 🧰 Tools Used
+- GCC Compiler  
+- VS Code IDE  
+- Git & GitHub for version control  
+
+## 💼 Connect With Me
+I’m always open to collaborating, discussing programming concepts, or exploring new opportunities.  
+You can find me on LinkedIn:
+
+[![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-View%20Profile-blue?logo=linkedin)](https://www.linkedin.com/in/pknatic/)
+
+
+
+
+
+
